@@ -133,6 +133,8 @@ CREATE TABLE products(
     constraint fk_products_categories FOREIGN KEY (categoryId) REFERENCES categories (categoryId)
 );
 
+
+
 -- orders table
 CREATE TABLE orders(
     orderId int NOT NULL,
