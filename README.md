@@ -43,6 +43,8 @@ The query shows the distribution of customers, where we can see that the country
 
 ![Top 10 new vehicles sales](assets/Graph1.png)
 
+_Table showing the number of clients by country_
+
 ### 2. What are the top 10 countries with the highest number of orders placed? Additionally, also relate the number of customers.
 
 In theory, countries with the highest number of customers should be the countries with the highest number of orders, which is why the following query helps us validate this statement.
@@ -62,6 +64,8 @@ LIMIT 10;
 In general, the initial expectation holds true, where countries with a higher number of customers generate a greater number of orders, with the exception of Germany, which matches the USA in the number of orders and significantly exceeds the number of France, despite having the same number of customers.
 
 ![Top 10 new vehicles sales](assets/Graph2.png)
+
+_Top 10 customer countries with the highest number of orders and number of customers._
 
 ### 3. What is the average number of orders placed by employees (full name) and by each of the shippers?
 
@@ -84,6 +88,8 @@ ORDER BY Name, avg_ordersByEmployee DESC
 As initially thought, employees on average do not have significant changes in the number of orders handled; in fact, it is quite intriguing that their distribution among the shipping companies is so uniform.
 
 ![Top 10 new vehicles sales](assets/Graph3.png)
+
+_Table that shows the average number of orders processed by each employee and the shipper company used in the process._
 
 ### 4. What is the total sales amount (without discount) by country, region, and shipper company?
 
@@ -112,6 +118,8 @@ The query shows us that some regions may have a more centralized use of one ship
 
 ![Top 10 new vehicles sales](assets/Graph4.png)
 
+_Table that presents the total value of orders placed by country, region and shipper company._
+
 ### 5. What is the total freight value, its maximum value, and the average service time of the company (days between order date and shipping date) for each year and month?
 
 The last query is conducted to study transportation costs and response times between the order date and the shipping date.
@@ -133,8 +141,22 @@ According to the query, we can interpret that the busiest months in 1997 were Au
 
 ![Top 10 new vehicles sales](assets/Graph5.png)
 
+_Table that represents the total expenses in transportation, maximum value and average service time (days of processing an order) for each month_
+
 # What I learned
+
+In this project, several topics have been presented that have helped me better understand the structure and composition of tables and their relationships. Since the Northwind database uses a variety of entities (tables), it allowed me to work with constraints in SQL, such as primary key, foreign key, NOT NULL, and also manage cardinality and relationships between entities.
+
+On the other hand, I also practiced DDL (Data Definition Language), where the order of creating and dropping tables is very important when there is a relationship between them.
+
+Lastly, I practiced some functions in PostgreSQL, which led me to directly research the documentation of this DBMS.
 
 # Conclusions
 
+In this project, I focused more on learning, so we cannot say much about the data found. Since the Northwind database is more for practice than for providing quality data for making inferences.
+
 ## Closing Thoughts
+
+This project has been very enriching as it allowed me to work with a database that has many tables and relationships between them. I also worked with joins, different types of functions, and aggregations.
+
+Additionally, I continue gaining more experience with tools like SQL, Power BI, PostgreSQL, Git & GitHub, and VS Code.
